@@ -36,9 +36,10 @@ body{
 
 .blank {
   margin: 10px;
-  height: 800px;
+  height: 700px;
   background-color: rgb(192, 193, 214);
   z-index: 1;
+  border: solid 3px black;
 }
 
 p {
@@ -46,9 +47,35 @@ p {
 }
 
 h1 {
+  position: relative;
+  right: -20px;
   font-size: 70px;
 }
 
 p {
   margin-left: 20px;
 }
+
+.play-button {
+  position: relative;
+  background-color: #4caf50;
+  font-size: 16px;
+  padding: 15px 30px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 100px;
+  bottom: -150px;
+}
+
+a {
+  height: 90px;
+  width: 90px;
+  bottom: -45%;
+  left: -26%;
+  opacity: 0.6;
+  position: relative;
+  display: flex;
+}
+

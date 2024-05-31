@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1101 Tetris</title>
     <link href="f.css" rel="stylesheet">
+    <script src="./script.js" type="module"></script>
 </head>
 <body>  
+  <a href="https://github.com/gradrrs/tetris">
+    <img class="banner" src="./images/github.png">
+  </a>
     <div class='grid'>
     <div></div>
     <div></div>
@@ -209,13 +213,15 @@
     <div></div>
     <div></div>
   </div>
-  <div class="blank"> 
+  <nav class="blank"> 
     <h1>TETRIS</h1>
     <p>Score: <span id="score">0</span></p>
     <p>Lines: <span id="lines">0</span></p>
     <p>Level: <span id="level">0</span></p>
     <canvas id="next" class="next"></canvas>
-  </div>
+    <button onclick="play()" class="play-button">Play</button>
+  </nav>
+    
 </body>
 </html>
 <script>
