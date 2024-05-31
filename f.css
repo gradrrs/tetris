@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  user-select: none;
+  background-image: url(images/fon.png.jpg);
+  background-size: cover;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: repeat(20, auto);
+  padding: 0.6vh;
+  gap: 0.3vh;
+  border-radius: 0.6vh;
+  background-color: rgba(1, 8, 89); 
+}
+
+.grid>div {
+  --cell-size: min(4.5vh, 7.5vw);
+  height: var(--cell-size);
+  width: var(--cell-size);
+  border-radius: 0.3vh;
+  background-color: rgba(126, 150, 221, 0.2); 
+}
+
+.blank {
+  margin: 10px;
+  height: 800px;
+  background-color: rgb(192, 193, 214);
+  z-index: 1;
+}
+
+p {
+  font-size: 40px;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+p {
+  margin-left: 20px;
+}
